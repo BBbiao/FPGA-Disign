@@ -1,0 +1,139 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Feb 25 17:41:06 2019
+# Process ID: 12780
+# Log file: D:/Xilinx/workspace/LED_stream/LED_stream/planAhead_run_1/planAhead.log
+# Journal file: D:/Xilinx/workspace/LED_stream/LED_stream/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/Xilinx/workspace/LED_stream/LED_stream/pa.fromNetlist.tcl
+# create_project -name LED_stream -dir "D:/Xilinx/workspace/LED_stream/LED_stream/planAhead_run_1" -part xc6vlx240tff1156-1
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/Xilinx/workspace/LED_stream/LED_stream/LED.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/Xilinx/workspace/LED_stream/LED_stream} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "LED.ucf" [current_fileset -constrset]
+Adding file 'D:/Xilinx/workspace/LED_stream/LED_stream/LED.ucf' to fileset 'constrs_1'
+# add_files [list {LED.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6vlx240tff1156-1
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design LED.ngc ...
+WARNING:NetListWriters:298 - No output is written to LED.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file LED.edif ...
+ngc2edif: Total memory usage is 83952 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/LED_stream.data/cache/LED_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/LED_stream.data/cache/LED_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex6/virtex6lxt/xc6vlx240t/ClockRegion.xml
+Loading clock buffers from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex6/virtex6lxt/xc6vlx240t/ClockBuffers.xml
+Loading clock placement rules from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/virtex6/ClockPlacerRules.xml
+Loading clock capable ios from D:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/virtex6/ClockCapableIOBs.xml
+Loading package pin functions from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex6/PinFunctions.xml...
+Loading package from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex6/virtex6lxt/xc6vlx240t/ff1156/Package.xml
+Loading io standards from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex6/IOStandards.xml
+Loading device configuration modes from D:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/virtex6/ConfigModes.xml
+Loading list of drcs for the architecture : D:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [D:/Xilinx/workspace/LED_stream/LED_stream/LED.ucf]
+Finished Parsing UCF File [D:/Xilinx/workspace/LED_stream/LED_stream/LED.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 84eca56f
+link_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 696.164 ; gain = 215.551
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+set_property package_pin "" [get_ports [list  clk]]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AC22 [get_ports led0]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AC24 [get_ports led1]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AE22 [get_ports led2]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+set_property package_pin "" [get_ports [list  led4]]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AE23 [get_ports led3]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AB23 [get_ports led4]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AG23 [get_ports led5]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+set_property package_pin "" [get_ports [list  led7]]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AE24 [get_ports led6]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin AD24 [get_ports led7]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+startgroup
+set_property package_pin U23 [get_ports clk]
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+INFO: [Power 33-160] Power Analysis is not supported for 6-series devices.
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See D:/Xilinx/workspace/LED_stream/LED_stream\planAhead_pid12780.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Feb 25 17:45:25 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

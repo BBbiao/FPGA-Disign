@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Xilinx/workspace/LED_stream/LED_stream/LED_stream_test_isim_beh.exe" -prj "D:/Xilinx/workspace/LED_stream/LED_stream/LED_stream_test_beh.prj" "work.LED_stream_test" 

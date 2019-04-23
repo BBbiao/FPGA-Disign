@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu Dec 13 11:02:48 2018
+# Process ID: 8884
+# Log file: D:/Xilinx/workspace/LED/planAhead_run_1/planAhead.log
+# Journal file: D:/Xilinx/workspace/LED/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/Xilinx/workspace/LED/pa.fromNetlist.tcl
+startgroup
+set_property package_pin D22 [get_ports KEY0]
+endgroup
+startgroup
+set_property package_pin C22 [get_ports KEY1]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports KEY2]
+endgroup
+startgroup
+set_property package_pin L21 [get_ports KEY2]
+endgroup
+startgroup
+set_property package_pin L20 [get_ports KEY3]
+endgroup
+startgroup
+set_property package_pin C18 [get_ports KEY4]
+endgroup
+startgroup
+set_property package_pin B18 [get_ports KEY5]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports KEY6]
+endgroup
+startgroup
+set_property package_pin K21 [get_ports KEY7]
+endgroup
+startgroup
+set_property package_pin AC22 [get_ports LED0]
+endgroup
+startgroup
+set_property package_pin AC22 [get_ports LED0]
+endgroup
+startgroup
+set_property package_pin AC24 [get_ports LED1]
+endgroup
+startgroup
+set_property package_pin AE22 [get_ports LED2]
+endgroup
+startgroup
+set_property package_pin AE23 [get_ports LED3]
+endgroup
+startgroup
+set_property package_pin AB23 [get_ports LED4]
+endgroup
+startgroup
+set_property package_pin AG23 [get_ports LED5]
+endgroup
+startgroup
+set_property package_pin AE24 [get_ports LED6]
+endgroup
+startgroup
+set_property package_pin AD24 [get_ports LED7]
+endgroup
+save_constraints

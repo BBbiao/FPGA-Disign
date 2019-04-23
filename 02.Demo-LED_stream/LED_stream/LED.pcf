@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Feb 25 17:46:46 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led0" LOCATE = SITE "AC22" LEVEL 1;
+COMP "led1" LOCATE = SITE "AC24" LEVEL 1;
+COMP "led2" LOCATE = SITE "AE22" LEVEL 1;
+COMP "led3" LOCATE = SITE "AE23" LEVEL 1;
+COMP "led4" LOCATE = SITE "AB23" LEVEL 1;
+COMP "led5" LOCATE = SITE "AG23" LEVEL 1;
+COMP "led6" LOCATE = SITE "AE24" LEVEL 1;
+COMP "led7" LOCATE = SITE "AD24" LEVEL 1;
+COMP "clk" LOCATE = SITE "U23" LEVEL 1;
+SCHEMATIC END;
+

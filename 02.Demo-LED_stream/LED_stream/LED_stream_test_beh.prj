@@ -1,0 +1,2 @@
+vhdl work "LED.vhd"
+vhdl work "LED_stream_test.vhd"

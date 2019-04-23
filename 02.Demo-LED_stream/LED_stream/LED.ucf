@@ -1,0 +1,12 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "led0" LOC = AC22;
+NET "led1" LOC = AC24;
+NET "led2" LOC = AE22;
+NET "led3" LOC = AE23;
+NET "led4" LOC = AB23;
+NET "led5" LOC = AG23;
+NET "led6" LOC = AE24;
+NET "led7" LOC = AD24;
+NET "clk" LOC = U23;

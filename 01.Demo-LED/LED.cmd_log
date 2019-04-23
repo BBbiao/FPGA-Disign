@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/Xilinx/workspace/LED/LED.xst" -ofn "D:/Xilinx/workspace/LED/LED.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx240t-ff1156-1 LED.ngc LED.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED_map.ncd LED.ngd LED.pcf 
+par -w -intstyle ise -ol high -mt off LED_map.ncd LED.ncd LED.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LED.twx LED.ncd -o LED.twr LED.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LED.ucf -p xc6vlx240t-ff1156-1 LED.ngc LED.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LED_map.ncd LED.ngd LED.pcf 
+par -w -intstyle ise -ol high -mt off LED_map.ncd LED.ncd LED.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LED.twx LED.ncd -o LED.twr LED.pcf -ucf LED.ucf 
+bitgen -intstyle ise -f LED.ut LED.ncd 
+bitgen -intstyle ise -f LED.ut LED.ncd 
